@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+	Microsoft ResX Schema 
+	
+	Version 2.0
+	
+	The primary goals of this format is to allow a simple XML format 
+	that is mostly human readable. The generation and parsing of the 
+	various data types are done through the TypeConverter classes 
+	associated with the data types.
+	
+	Example:
+	
+	... ado.net/XML headers & schema ...
+	<resheader name="resmimetype">text/microsoft-resx</resheader>
+	<resheader name="version">2.0</resheader>
+	<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+	<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+	<data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+	<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+	<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+		<value>[base64 mime encoded serialized .NET Framework object]</value>
+	</data>
+	<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+		<value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+		<comment>This is a comment</comment>
+	</data>
+				
+	There are any number of "resheader" rows that contain simple 
+	name/value pairs.
+	
+	Each data row contains a name, and value. The row also contains a 
+	type or mimetype. Type corresponds to a .NET class that support 
+	text/value conversion through the TypeConverter architecture. 
+	Classes that don't support this are serialized and stored with the 
+	mimetype set.
+	
+	The mimetype is used for serialized objects, and tells the 
+	ResXResourceReader how to depersist the object. This is currently not 
+	extensible. For a given mimetype the value must be set accordingly:
+	
+	Note - application/x-microsoft.net.object.binary.base64 is the format 
+	that the ResXResourceWriter will generate, however the reader can 
+	read any of the formats listed below.
+	
+	mimetype: application/x-microsoft.net.object.binary.base64
+	value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+	
+	mimetype: application/x-microsoft.net.object.soap.base64
+	value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+	mimetype: application/x-microsoft.net.object.bytearray.base64
+	value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+	<xsd:element name="root" msdata:IsDataSet="true">
+	  <xsd:complexType>
+		<xsd:choice maxOccurs="unbounded">
+		  <xsd:element name="metadata">
+			<xsd:complexType>
+			  <xsd:sequence>
+				<xsd:element name="value" type="xsd:string" minOccurs="0" />
+			  </xsd:sequence>
+			  <xsd:attribute name="name" use="required" type="xsd:string" />
+			  <xsd:attribute name="type" type="xsd:string" />
+			  <xsd:attribute name="mimetype" type="xsd:string" />
+			  <xsd:attribute ref="xml:space" />
+			</xsd:complexType>
+		  </xsd:element>
+		  <xsd:element name="assembly">
+			<xsd:complexType>
+			  <xsd:attribute name="alias" type="xsd:string" />
+			  <xsd:attribute name="name" type="xsd:string" />
+			</xsd:complexType>
+		  </xsd:element>
+		  <xsd:element name="data">
+			<xsd:complexType>
+			  <xsd:sequence>
+				<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+				<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+			  </xsd:sequence>
+			  <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+			  <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+			  <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+			  <xsd:attribute ref="xml:space" />
+			</xsd:complexType>
+		  </xsd:element>
+		  <xsd:element name="resheader">
+			<xsd:complexType>
+			  <xsd:sequence>
+				<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+			  </xsd:sequence>
+			  <xsd:attribute name="name" type="xsd:string" use="required" />
+			</xsd:complexType>
+		  </xsd:element>
+		</xsd:choice>
+	  </xsd:complexType>
+	</xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+	<value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+	<value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+	<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+	<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AreSame" xml:space="preserve">
+	<value>DefaultAssertProvider.AreSame(first = '{0}', second = '{1}') failure</value>
+  </data>
+  <data name="AreNotSame" xml:space="preserve">
+	<value>DefaultAssertProvider.AreNotSame(first = '{0}', second = '{1}') failure</value>
+  </data>
+  <data name="AreEqual" xml:space="preserve">
+	<value>DefaultAssertProvider.AreEqual(first = '{0}', second = '{1}') failure</value>
+  </data>
+  <data name="AreNotEqual" xml:space="preserve">
+	<value>DefaultAssertProvider.AreNotEqual(first = '{0}', second = '{1}') failure</value>
+  </data>
+  <data name="ObjectIsNull" xml:space="preserve">
+	<value>DefaultAssertProvider.IsNull(obj = '{0}') failure</value>
+  </data>
+  <data name="ObjectIsNotNull" xml:space="preserve">
+	<value>DefaultAssertProvider.IsNotNull(obj = '{0}') failure</value>
+  </data>
+  <data name="ValueIsNull" xml:space="preserve">
+	<value>DefaultAssertProvider.IsNull(value = '{0}') failure</value>
+  </data>
+  <data name="ValueIsNotNull" xml:space="preserve">
+	<value>DefaultAssertProvider.IsNotNull(value = '{0}') failure</value>
+  </data>
+  <data name="IsDefault" xml:space="preserve">
+	<value>DefaultAssertProvider.IsDefault(obj = '{0}') failure</value>
+  </data>
+  <data name="IsNotDefault" xml:space="preserve">
+	<value>DefaultAssertProvider.IsNotDefault(obj = '{0}') failure</value>
+  </data>
+  <data name="IsTrue" xml:space="preserve">
+	<value>DefaultAssertProvider.IsTrue(value = '{0}') failure</value>
+  </data>
+  <data name="IsFalse" xml:space="preserve">
+	<value>DefaultAssertProvider.IsFalse(value = '{0}') failure</value>
+  </data>
+  <data name="IsNaN" xml:space="preserve">
+	<value>DefaultAssertProvider.IsNaN(value = '{0}') failure</value>
+  </data>
+  <data name="IsNotNaN" xml:space="preserve">
+	<value>DefaultAssertProvider.IsNotNaN(value = '{0}') failure</value>
+  </data>
+  <data name="IsPositiveInfinity" xml:space="preserve">
+	<value>DefaultAssertProvider.IsPositiveInfinity(value = '{0}') failure</value>
+  </data>
+  <data name="IsNotPositiveInfinity" xml:space="preserve">
+	<value>DefaultAssertProvider.IsNotPositiveInfinity(value = '{0}') failure</value>
+  </data>
+  <data name="IsNegativeInfinity" xml:space="preserve">
+	<value>DefaultAssertProvider.IsNegativeInfinity(value = '{0}') failure</value>
+  </data>
+  <data name="IsNotNegativeInfinity" xml:space="preserve">
+	<value>DefaultAssertProvider.IsNotNegativeInfinity(value = '{0}') failure</value>
+  </data>
+  <data name="GuidIsEmpty" xml:space="preserve">
+	<value>DefaultAssertProvider.IsEmpty(value = '{0}') failure</value>
+  </data>
+  <data name="GuidIsNotEmpty" xml:space="preserve">
+	<value>DefaultAssertProvider.IsNotEmpty(value = '{0}') failure</value>
+  </data>
+  <data name="IsGreaterThan" xml:space="preserve">
+	<value>DefaultAssertProvider.IsGreaterThan(first = '{0}', second = '{1}') failure</value>
+  </data>
+  <data name="IsLessThan" xml:space="preserve">
+	<value>DefaultAssertProvider.IsLessThan(first = '{0}', second = '{1}') failure</value>
+  </data>
+  <data name="IsGreaterThanOrEqual" xml:space="preserve">
+	<value>DefaultAssertProvider.IsGreaterThanOrEqual(first = '{0}', second = '{1}') failure</value>
+  </data>
+  <data name="IsLessThanOrEqual" xml:space="preserve">
+	<value>DefaultAssertProvider.IsLessThanOrEqual(first = '{0}', second = '{1}') failure</value>
+  </data>
+  <data name="StringContains" xml:space="preserve">
+	<value>DefaultAssertProvider.Contains(str = '{0}', part = '{1}') failure</value>
+  </data>
+  <data name="StringDoesNotContain" xml:space="preserve">
+	<value>DefaultAssertProvider.DoesNotContain(str = '{0}', part = '{1}') failure</value>
+  </data>
+  <data name="StartsWith" xml:space="preserve">
+	<value>DefaultAssertProvider.StartsWith(str = '{0}', part = '{1}') failure</value>
+  </data>
+  <data name="DoesNotStartWith" xml:space="preserve">
+	<value>DefaultAssertProvider.DoesNotStartWith(str = '{0}', part = '{1}') failure</value>
+  </data>
+  <data name="EndsWith" xml:space="preserve">
+	<value>DefaultAssertProvider.EndsWith(str = '{0}', part = '{1}') failure</value>
+  </data>
+  <data name="DoesNotEndWith" xml:space="preserve">
+	<value>DefaultAssertProvider.DoesNotEndWith(str = '{0}', part = '{1}') failure</value>
+  </data>
+  <data name="Matches" xml:space="preserve">
+	<value>DefaultAssertProvider.Matches(str = '{0}', regex = '{1}') failure</value>
+  </data>
+  <data name="DoesNotMatch" xml:space="preserve">
+	<value>DefaultAssertProvider.DoesNotMatch(str = '{0}', regex = '{1}') failure</value>
+  </data>
+  <data name="EnumerableIsEmpty" xml:space="preserve">
+	<value>DefaultAssertProvider.IsDefault(enumerable = '{0}') failure</value>
+  </data>
+  <data name="EnumerableIsNotEmpty" xml:space="preserve">
+	<value>DefaultAssertProvider.EnumerableIsNotEmpty(enumerable = '{0}') failure</value>
+  </data>
+  <data name="EnumerableContains" xml:space="preserve">
+	<value>DefaultAssertProvider.Contains(enumerable' {0}', item = '{1}') failure</value>
+  </data>
+  <data name="EnumerableDoesNotContain" xml:space="preserve">
+	<value>DefaultAssertProvider.DoesNotContain(enumerable '{0}', item = '{1}') failure</value>
+  </data>
+  <data name="IsOfType" xml:space="preserve">
+	<value>DefaultAssertProvider.IsOfType(type = '{0}', obj = '{1}') failure</value>
+  </data>
+  <data name="IsNotOfType" xml:space="preserve">
+	<value>DefaultAssertProvider.IsNotOfType(type = '{0}', obj = '{1}') failure</value>
+  </data>
+  <data name="IsOfTypeAssignableFrom" xml:space="preserve">
+	<value>DefaultAssertProvider.IsOfTypeAssignableFrom(type = '{0}', obj = '{1}') failure</value>
+  </data>
+  <data name="IsNotOfTypeAssignableFrom" xml:space="preserve">
+	<value>DefaultAssertProvider.IsNotOfTypeAssignableFrom(type = '{0}', obj = '{1}') failure</value>
+  </data>
+  <data name="IsOfTypeAssignableTo" xml:space="preserve">
+	<value>DefaultAssertProvider.IsOfTypeAssignableTo(type = '{0}', obj = '{1}') failure</value>
+  </data>
+  <data name="IsNotOfTypeAssignableTo" xml:space="preserve">
+	<value>DefaultAssertProvider.IsNotOfTypeAssignableTo(type = '{0}', obj = '{1}') failure</value>
+  </data>
+  <data name="Throws" xml:space="preserve">
+	<value>DefaultAssertProvider.Throws&lt;TException = '{0}'&gt;(action = '{1}') failure</value>
+  </data>
+  <data name="DoesNotThrow" xml:space="preserve">
+	<value>DefaultAssertProvider.DoesNotThrow&lt;TException = '{0}'&gt;(action = '{1}') failure</value>
+  </data>
+</root>
