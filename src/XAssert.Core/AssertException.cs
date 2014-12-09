@@ -7,10 +7,6 @@ namespace XAssert
 {
 	public class AssertException : Exception
 	{
-		public AssertException()
-		{
-		}
-
 		public AssertException(string message)
 			: base(message)
 		{

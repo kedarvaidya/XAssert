@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8B67E57D-DCF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAssert.Core", "src\XAssert.Core\XAssert.Core.csproj", "{030C0CD6-98BC-4FFC-AB09-521EC312E18E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{89C04089-05DD-4227-AFD7-0040E851CD6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAssert.Tests", "test\XAssert.Tests\XAssert.Tests.csproj", "{0547AB3A-364E-4247-8164-22AFB0DDA7B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +21,16 @@ Global
 		{030C0CD6-98BC-4FFC-AB09-521EC312E18E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{030C0CD6-98BC-4FFC-AB09-521EC312E18E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{030C0CD6-98BC-4FFC-AB09-521EC312E18E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0547AB3A-364E-4247-8164-22AFB0DDA7B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0547AB3A-364E-4247-8164-22AFB0DDA7B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0547AB3A-364E-4247-8164-22AFB0DDA7B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0547AB3A-364E-4247-8164-22AFB0DDA7B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{030C0CD6-98BC-4FFC-AB09-521EC312E18E} = {8B67E57D-DCF7-4610-AD97-4A2F8B2EEDC5}
+		{0547AB3A-364E-4247-8164-22AFB0DDA7B6} = {89C04089-05DD-4227-AFD7-0040E851CD6E}
 	EndGlobalSection
 EndGlobal
