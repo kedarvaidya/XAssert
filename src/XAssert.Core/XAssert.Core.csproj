@@ -8,7 +8,7 @@
     <ProjectGuid>{030C0CD6-98BC-4FFC-AB09-521EC312E18E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>XAssert.Core</RootNamespace>
+    <RootNamespace>XAssert</RootNamespace>
     <AssemblyName>XAssert.Core</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
