@@ -48,9 +48,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssertFlavorTestsBase.cs" />
     <Compile Include="AssertProviderTestsBase.cs" />
     <Compile Include="DefaultAssertProviderTests.cs" />
+    <Compile Include="ExpectTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShouldTests.cs" />
     <Compile Include="TestFailedException.cs" />
     <Compile Include="TestHelper.cs" />
   </ItemGroup>
@@ -61,6 +64,14 @@
     <ProjectReference Include="..\..\src\XAssert.Core\XAssert.Core.csproj">
       <Project>{030c0cd6-98bc-4ffc-ab09-521ec312e18e}</Project>
       <Name>XAssert.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\XAssert.Expect\XAssert.Expect.csproj">
+      <Project>{472eff93-6c78-4f4e-aa42-3dc773a01920}</Project>
+      <Name>XAssert.Expect</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\XAssert.Should\XAssert.Should.csproj">
+      <Project>{73a2e27f-2922-49e6-be80-ed4b7ec7e34f}</Project>
+      <Name>XAssert.Should</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
