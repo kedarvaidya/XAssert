@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>4062bd48-b59a-43ca-bce3-8b856b4f2b2d</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>XAssert</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Be`1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BooleanAssertions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CollectionAssertions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ComparisonAssertions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Config.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EqualityAssertions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExceptionAssertions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GuidAssertions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NullAndDefaultAssertions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NumberAssertions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SamenessAssertions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StringAssertions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TypeAssertions.cs" />
+  </ItemGroup>
+</Project>

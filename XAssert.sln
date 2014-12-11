@@ -11,7 +11,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{89C04089-0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAssert.Tests", "test\XAssert.Tests\XAssert.Tests.csproj", "{0547AB3A-364E-4247-8164-22AFB0DDA7B6}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "XAssert.Shared", "src\XAssert.Shared\XAssert.Shared.shproj", "{4062BD48-B59A-43CA-BCE3-8B856B4F2B2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAssert.Should", "src\XAssert.Should\XAssert.Should.csproj", "{73A2E27F-2922-49E6-BE80-ED4B7EC7E34F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAssert.Expect", "src\XAssert.Expect\XAssert.Expect.csproj", "{472EFF93-6C78-4F4E-AA42-3DC773A01920}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		src\XAssert.Shared\XAssert.Shared.projitems*{73a2e27f-2922-49e6-be80-ed4b7ec7e34f}*SharedItemsImports = 4
+		src\XAssert.Shared\XAssert.Shared.projitems*{472eff93-6c78-4f4e-aa42-3dc773a01920}*SharedItemsImports = 4
+		src\XAssert.Shared\XAssert.Shared.projitems*{4062bd48-b59a-43ca-bce3-8b856b4f2b2d}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -25,6 +36,14 @@ Global
 		{0547AB3A-364E-4247-8164-22AFB0DDA7B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0547AB3A-364E-4247-8164-22AFB0DDA7B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0547AB3A-364E-4247-8164-22AFB0DDA7B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73A2E27F-2922-49E6-BE80-ED4B7EC7E34F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73A2E27F-2922-49E6-BE80-ED4B7EC7E34F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73A2E27F-2922-49E6-BE80-ED4B7EC7E34F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73A2E27F-2922-49E6-BE80-ED4B7EC7E34F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{472EFF93-6C78-4F4E-AA42-3DC773A01920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{472EFF93-6C78-4F4E-AA42-3DC773A01920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{472EFF93-6C78-4F4E-AA42-3DC773A01920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{472EFF93-6C78-4F4E-AA42-3DC773A01920}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,5 +51,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{030C0CD6-98BC-4FFC-AB09-521EC312E18E} = {8B67E57D-DCF7-4610-AD97-4A2F8B2EEDC5}
 		{0547AB3A-364E-4247-8164-22AFB0DDA7B6} = {89C04089-05DD-4227-AFD7-0040E851CD6E}
+		{4062BD48-B59A-43CA-BCE3-8B856B4F2B2D} = {8B67E57D-DCF7-4610-AD97-4A2F8B2EEDC5}
+		{73A2E27F-2922-49E6-BE80-ED4B7EC7E34F} = {8B67E57D-DCF7-4610-AD97-4A2F8B2EEDC5}
+		{472EFF93-6C78-4F4E-AA42-3DC773A01920} = {8B67E57D-DCF7-4610-AD97-4A2F8B2EEDC5}
 	EndGlobalSection
 EndGlobal
