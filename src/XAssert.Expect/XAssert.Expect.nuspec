@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>$id$</id>
+        <version>$version$</version>
+        <title>$id$</title>
+        <authors>$author$</authors>
+        <licenseUrl>https://github.com/kedarvaidya/XAssert/blob/master/LICENSE</licenseUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>$description$</description>
+        <copyright>$copyright$</copyright>
+        <tags>assert expect</tags>
+        <dependencies>
+            <dependency id="XAssert.Core" version="$version$" />
+        </dependencies>
+        <references>
+            <reference file="XAssert.Expect.dll" />
+        </references>
+    </metadata>
+    <files>
+        <file src="XAssert.Expect.dll" target="lib\portable-net4+sl5+netcore45+wpa81+wp8\XAssert.Expect.dll" />
+    </files>
+</package>

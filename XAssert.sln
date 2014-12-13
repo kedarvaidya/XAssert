@@ -17,6 +17,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAssert.Should", "src\XAsse
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAssert.Expect", "src\XAssert.Expect\XAssert.Expect.csproj", "{472EFF93-6C78-4F4E-AA42-3DC773A01920}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B5F5A362-6034-4731-9179-D9BE68EBB61B}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		src\XAssert.Shared\XAssert.Shared.projitems*{73a2e27f-2922-49e6-be80-ed4b7ec7e34f}*SharedItemsImports = 4
