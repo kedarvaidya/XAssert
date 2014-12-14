@@ -1,8 +1,8 @@
-properties { 
+properties {
     $base_dir  = resolve-path .
     $src_dir = "$base_dir\src"
     $test_dir = "$base_dir\test"
-    $build_dir = "$base_dir\build" 
+    $build_dir = "$base_dir\build"
     $release_dir = "$base_dir\release"
     $packages_dir = "$base_dir\packages"
     $tools_dir = "$base_dir\tools\"
@@ -16,15 +16,16 @@ properties {
     $id_should = "XAssert.Should"
     $id_expect = "XAssert.Expect"
     $id_test = "XAssert.Tests"
-    $description_core = "XAssert is an assertion framework for .NET"
+    $description_core = "XAssert is a test runner agnostic assertion framework for .NET. It is set of portable class libraries compatible with .NET 4+, Silverlight 5+, Windows 8+ and Windows Phone 8+"
     $description_should = "Should flavor for XAssert"
     $description_expect = "Expect flavor for XAssert"
-    $description_test = "Test for XAssert"
+    $description_test = "Tests for XAssert"
     $author = "Kedar Vaidya"
     $start_year = 2014
     $curr_year = (Get-Date).ToUniversalTime().Year
     $copyright_year_suffix = if ($start_year -eq $curr_year) { "" } else { "-$curr_year" }
     $copyright = "Copyright " + [char]0x00A9 + " $author $start_year$copyright_year_suffix"
+    $projectUrl = "https://github.com/kedarvaidya/XAssert"
     $licenseUrl = "https://github.com/kedarvaidya/XAssert/blob/master/LICENSE"
 }
 
@@ -32,12 +33,12 @@ include .\psakeutils.ps1
 
 task default -depends Compile, Test
 
-task Clean { 
+task Clean {
   remove-item -force -recurse $build_dir -ErrorAction SilentlyContinue
   remove-item -force -recurse $release_dir -ErrorAction SilentlyContinue
 }
 
-task Init -depends Clean { 
+task Init -depends Clean {
     Generate-Assembly-Info `
         -file "$src_dir\XAssert.Core\Properties\AssemblyInfo.cs" `
         -title "$id_core $version" `
@@ -73,7 +74,7 @@ task Init -depends Clean {
         -product "$id_test $version" `
         -version $version `
         -copyright $copyright
-       
+
     new-item $build_dir -itemType directory
     new-item $release_dir -itemType directory
 }
@@ -99,11 +100,11 @@ task Test -depend Compile -precondition { return $run_tests } {
     {
         Write-Host "Found more than 1 xunit.console.exe in $packages_dir"
     }
-    else 
-    {        
+    else
+    {
         $xunit_path = $xunit_paths[0].FullName
         & "$xunit_path" "$build_dir\XAssert.Tests\XAssert.Tests.dll"
-        if($lastexitcode -ne 0) 
+        if($lastexitcode -ne 0)
         {
             throw "$lastexitcode tests failed"
         }
@@ -115,17 +116,17 @@ task Pack -depends Compile, Test {
         -o $release_dir `
         -Version $nuget_package_version `
         -BasePath "$build_dir\XAssert.Core\" `
-        -Properties "id=$id_core;author=$author;description=$description_core;copyright=$copyright;licenseUrl=$licenseUrl"
-    
+        -Properties "id=$id_core;author=$author;description=$description_core;copyright=$copyright;projectUrl=$projectUrl;licenseUrl=$licenseUrl"
+
     & "$nuget_path" pack "$base_dir\src\XAssert.Should\XAssert.Should.nuspec" `
         -o $release_dir `
         -Version $nuget_package_version `
         -BasePath "$build_dir\XAssert.Should\" `
-        -Properties "id=$id_should;author=$author;description=$description_should;copyright=$copyright;licenseUrl=$licenseUrl"
+        -Properties "id=$id_should;author=$author;description=$description_should;copyright=$copyright;projectUrl=$projectUrl;licenseUrl=$licenseUrl"
 
     & "$nuget_path" pack "$base_dir\src\XAssert.Expect\XAssert.Expect.nuspec" `
         -o $release_dir `
         -Version $nuget_package_version `
         -BasePath "$build_dir\XAssert.Expect\" `
-        -Properties "id=$id_expect;author=$author;description=$description_expect;copyright=$copyright;licenseUrl=$licenseUrl"
+        -Properties "id=$id_expect;author=$author;description=$description_expect;copyright=$copyright;projectUrl=$projectUrl;licenseUrl=$licenseUrl"
 }
